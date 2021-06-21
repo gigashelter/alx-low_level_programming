@@ -1,24 +1,25 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
+
 /**
- * main - main block
- * Description: Print all numbers of base64 in lowercase.
- * You can only use `putchar`, and only 3 times.
- * Return: 0
+ * main - the function main prints all alphabet
+ *
+ *
+ * Return: Always 0 (Sucess)
  */
 int main(void)
 {
-char c;
-int i;
+int n;
 
-for (i = 0; i < 10; i++)
-}
-putchar(i + '0');
-}
-for (c = 'a'; c < 'g'; c++)
+for (n = 48; n <= 57; ++n)
 {
-putchar(c);
+putchar(n);
+}
+for (n = 97; n <= 102; ++n)
+{
+putchar(n);
 }
 putchar('\n');
-
 return (0);
 }
