@@ -1,11 +1,13 @@
 #include "lists.h"
 #include <string.h>
 #include <stdio.h>
+
 /**
- * add_node_end - add a new node at the end of `list_t` list
- * @head: double pointer to head
- * @str: string to duplicate into new node
- * Return: Address of the new element or NULL if failed
+ * add_node_end - add a node at the end of a linked list
+ * @head: The character to print
+ * @str: string for the new node
+ *
+ * Return: new node
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
@@ -17,7 +19,7 @@ current = *head;
 while (current && current->next != NULL)
 current = current->next;
 
-for (c = 0; dup_str[c] != '\0'; c++)
+for (c = 0; str[c] != '\0'; c++)
 ;
 
 new_node = malloc(sizeof(list_t));
